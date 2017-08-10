@@ -3,7 +3,7 @@ package Getopt::Long::EvenLess::Dump;
 # DATE
 # VERSION
 
-use 5.010;
+use 5.010001;
 use strict;
 use warnings;
 
@@ -54,7 +54,7 @@ _
         },
     },
 };
-sub dump_getopt_long_script {
+sub dump_getopt_long_evenless_script {
     require Capture::Tiny;
     require Getopt::Long::Util;
     require UUID::Random;

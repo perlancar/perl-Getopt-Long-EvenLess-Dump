@@ -3,7 +3,6 @@ package Getopt::Long::EvenLess::Patch::DumpAndExit;
 # DATE
 # VERSION
 
-use 5.010001;
 use strict;
 no warnings;
 
@@ -16,7 +15,7 @@ our %config;
 sub _dump {
     print "# BEGIN DUMP $config{-tag}\n";
     local $Data::Dmp::OPT_DEPARSE = 0;
-    say dmp($_[0]);
+    print dmp($_[0]), "\n";
     print "# END DUMP $config{-tag}\n";
 }
 
